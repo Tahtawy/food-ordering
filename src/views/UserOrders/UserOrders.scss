@@ -1,0 +1,18 @@
+@import "../../assets/scss/variables";
+
+.user-orders {
+  background-color: $light_grey;
+  color: $text_blue;
+  min-height: 100vh;
+  padding: 10px;
+
+  &__table {
+    font-weight: 500;
+    padding: 20px;
+
+    .table {
+      color: $text_blue;
+      background-color: #fff;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../assets/scss/variables";
+
+.quantity-input {
+  &__minus,
+  &__plus {
+    background-color: $sky-blue;
+    color: #fff;
+    height: 45px;
+    width: 50px;
+  }
+  &__minus {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  &__plus {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  &__text-input {
+    border: 2px solid $grey;
+    color: $text_blue;
+    font-size: 20px;
+    font-weight: bold;
+    width: 70px;
+  }
+}

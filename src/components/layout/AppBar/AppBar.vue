@@ -1,17 +1,15 @@
 <template>
-  <div id="app">
-    <app-bar></app-bar>
-    <router-view />
-  </div>
+  <nav class="app-bar">
+    <button class="app-bar__menu-icon">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
 </template>
 
 <script>
-// Components
-import AppBar from "./components/layout/AppBar/AppBar.vue";
-
 export default {
   // Options / Misc
-  name: "App",
+  name: "AppBar",
 
   // Options / Data
   data() {
@@ -38,9 +36,7 @@ export default {
   // Options / Assets
   directives: {},
   filters: {},
-  components: {
-    AppBar
-  },
+  components: {},
 
   // Options / Composition
   mixins: {},
@@ -48,6 +44,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import "./assets/scss/global.scss";
+<style lang="scss" scoped>
+@import "./AppBar.scss";
 </style>

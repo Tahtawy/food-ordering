@@ -1,23 +1,22 @@
 <template>
-  <div id="app">
-    <app-bar></app-bar>
-    <router-view />
-  </div>
+  <section class="page-title">
+    <h1>{{ restaurantTitle }}, by {{ userName }}</h1>
+  </section>
 </template>
 
 <script>
-// Components
-import AppBar from "./components/layout/AppBar/AppBar.vue";
-
 export default {
   // Options / Misc
-  name: "App",
+  name: "PageTitle",
 
   // Options / Data
   data() {
     return {};
   },
-  props: {},
+  props: {
+    restaurantTitle: String,
+    userName: String
+  },
   computed: {},
   methods: {},
   watch: {},
@@ -38,9 +37,7 @@ export default {
   // Options / Assets
   directives: {},
   filters: {},
-  components: {
-    AppBar
-  },
+  components: {},
 
   // Options / Composition
   mixins: {},
@@ -48,6 +45,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import "./assets/scss/global.scss";
+<style lang="scss" scoped>
+@import "./PageTitle.scss";
 </style>

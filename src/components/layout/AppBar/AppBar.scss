@@ -1,0 +1,13 @@
+@import "../../../assets/scss/variables";
+
+.app-bar {
+  background-color: $grey;
+  padding: 20px;
+
+  &__menu-icon {
+    background-color: transparent;
+    border: none;
+    color: $sky_blue;
+    font-size: 28px;
+  }
+}
